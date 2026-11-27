@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffee Shop – Kopi, Minuman, dan Camilan Hangat</title>
+  <meta name="description" content="Coffee Shop: aneka kopi, minuman segar, dan camilan goreng seperti kentang goreng dan jamur crispy. Harga ramah, tempat nyaman.">
+
+  <!-- Font (opsional, kalau offline otomatis pakai font bawaan) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#beranda" class="brand">Coffee Shop</a>
+      <nav aria-label="Menu utama">
+        <ul class="nav-list">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="atas">
+
+    <!-- HALAMAN 1: BERANDA -->
+    <section class="hero page" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Ngopi santai, ditemani yang gurih-gurih.</h1>
+          <p class="lead">Kopi, minuman segar, dan camilan goreng yang dibuat setiap hari. Mampir sebentar atau duduk lama, dua-duanya boleh.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">Lihat menu</a>
+            <a class="btn btn-ghost" href="#kontak">Pesan lewat WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <!-- Gambar cangkir kopi (SVG) -->
+          <div class="hero-art">
+            <svg viewBox="0 0 200 160" role="img" aria-label="Secangkir kopi panas">
+              <path d="M70 18c-8 10 8 16 0 28M100 12c-8 10 8 16 0 28M130 18c-8 10 8 16 0 28" fill="none" stroke="#2d5b4e" stroke-width="4" stroke-linecap="round"/>
+              <ellipse cx="100" cy="144" rx="72" ry="7" fill="#dfe4e2"/>
+              <path d="M150 72h12a18 18 0 0 1 0 36h-16" fill="none" stroke="#2d5b4e" stroke-width="8" stroke-linecap="round"/>
+              <path d="M50 62h100v30a50 50 0 0 1-50 50 50 50 0 0 1-50-50z" fill="#2d5b4e"/>
+              <ellipse cx="100" cy="62" rx="50" ry="8" fill="#21453b"/>
+            </svg>
+          </div>
+
+          <aside class="board" aria-label="Menu favorit">
+            <h2>Paling sering dipesan</h2>
+            <ul class="price-list">
+              <li>
+                <span class="item-name">Kopi Susu Gula Aren</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">18K</span>
+              </li>
+              <li>
+                <span class="item-name">Kentang Goreng</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">15K</span>
+              </li>
+              <li>
+                <span class="item-name">Jamur Goreng Crispy</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">15K</span>
+              </li>
+            </ul>
+            <p class="board-note">Harga dalam ribuan rupiah.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- HALAMAN 2: MENU -->
+    <section class="section page" id="menu">
+      <div class="container">
+        <h2 class="section-title">Menu</h2>
+        <p class="section-intro">Semua minuman bisa dipilih panas atau dingin. Mau gula dikurangi? Bilang saja ke kasir.</p>
+
+        <div class="menu-grid">
+
+          <!-- Kelompok 1: Kopi -->
+          <div class="menu-group">
+            <h3>
+              <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M5 12h18v7a9 9 0 0 1-18 0z"/>
+                <path d="M23 14h2a3.5 3.5 0 0 1 0 7h-2"/>
+                <path d="M10 4c-1.5 2 1.5 3 0 5M16 4c-1.5 2 1.5 3 0 5"/>
+              </svg>
+              Kopi
+            </h3>
+            <ul class="price-list">
+              <li>
+                <span class="item-name">Espresso</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">12K</span>
+                <p class="item-desc">Shot tunggal, pekat dan bersih.</p>
+              </li>
+              <li>
+                <span class="item-name">Americano</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">15K</span>
+                <p class="item-desc">Espresso dengan air, ringan diminum.</p>
+              </li>
+              <li>
+                <span class="item-name">Kopi Susu Gula Aren</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">18K</span>
+                <p class="item-desc">Susu, espresso, dan gula aren asli.</p>
+              </li>
+              <li>
+                <span class="item-name">Cappuccino</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">20K</span>
+                <p class="item-desc">Espresso dengan busa susu tebal.</p>
+              </li>
+              <li>
+                <span class="item-name">Caffe Latte</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">20K</span>
+                <p class="item-desc">Lebih banyak susu, rasa lembut.</p>
+              </li>
+              <li>
+                <span class="item-name">Vietnam Drip</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">22K</span>
+                <p class="item-desc">Diseduh pelan, manis dengan susu kental.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kelompok 2: Non-kopi -->
+          <div class="menu-group">
+            <h3>
+              <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M8 9h16l-2 19H10z"/>
+                <path d="M9.2 17h13.6"/>
+                <path d="M18 9l3-6"/>
+              </svg>
+              Non-kopi
+            </h3>
+            <ul class="price-list">
+              <li>
+                <span class="item-name">Matcha Latte</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">20K</span>
+                <p class="item-desc">Teh hijau dengan susu, tidak terlalu manis.</p>
+              </li>
+              <li>
+                <span class="item-name">Cokelat</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">18K</span>
+                <p class="item-desc">Cokelat pekat dengan susu.</p>
+              </li>
+              <li>
+                <span class="item-name">Teh Tarik</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">15K</span>
+                <p class="item-desc">Teh hitam, susu, ditarik sampai berbusa.</p>
+              </li>
+              <li>
+                <span class="item-name">Lemon Tea</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">12K</span>
+                <p class="item-desc">Segar, cocok untuk siang hari.</p>
+              </li>
+              <li>
+                <span class="item-name">Lychee Tea</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">15K</span>
+                <p class="item-desc">Teh dingin dengan buah leci.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kelompok 3: Camilan -->
+          <div class="menu-group">
+            <h3>
+              <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M7 14h18l-2 14H9z"/>
+                <path d="M11 14V6M16 14V3M21 14V7"/>
+              </svg>
+              Camilan
+            </h3>
+            <ul class="price-list">
+              <li>
+                <span class="item-name">Kentang Goreng</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">15K</span>
+                <p class="item-desc">Renyah di luar, empuk di dalam. Pilih saus sambal atau mayo.</p>
+              </li>
+              <li>
+                <span class="item-name">Jamur Goreng Crispy</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">15K</span>
+                <p class="item-desc">Jamur tiram berbalut tepung bumbu, digoreng garing.</p>
+              </li>
+              <li>
+                <span class="item-name">Tahu Crispy</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">12K</span>
+                <p class="item-desc">Tahu goreng tepung dengan taburan bumbu.</p>
+              </li>
+              <li>
+                <span class="item-name">Pisang Goreng</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">12K</span>
+                <p class="item-desc">Pisang kepok goreng, bisa tambah cokelat atau keju.</p>
+              </li>
+              <li>
+                <span class="item-name">Cireng Bumbu Rujak</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">12K</span>
+                <p class="item-desc">Kenyal, dengan bumbu rujak pedas manis.</p>
+              </li>
+              <li>
+                <span class="item-name">Roti Bakar Cokelat Keju</span>
+                <span class="leader" aria-hidden="true"></span>
+                <span class="item-price">15K</span>
+                <p class="item-desc">Roti tebal dibakar, isi cokelat dan keju.</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HALAMAN 3: TENTANG -->
+    <section class="section section-tint page" id="tentang">
+      <div class="container about-grid">
+        <h2 class="section-title">Tentang kami</h2>
+        <div class="about-text">
+          <p>Coffee Shop adalah usaha kecil milik keluarga. Kami mulai dari satu meja di depan rumah, dan sekarang jadi tempat nongkrong untuk teman kuliah, pekerja kantor sekitar, dan warga yang lewat.</p>
+          <p>Biji kopi dipilih dari petani lokal, camilan digoreng saat dipesan, dan harga dijaga supaya tetap enak di kantong.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HALAMAN 4: KONTAK -->
+    <section class="section page" id="kontak">
+      <div class="container">
+        <h2 class="section-title">Pesan dan kunjungi kami</h2>
+
+        <div class="contact-grid">
+          <div class="contact-block">
+            <h3>Pesan lewat WhatsApp</h3>
+            <p>Kirim daftar pesanan dan jam ambil. Kami balas secepatnya.</p>
+            <!-- GANTI nomor di bawah: format 62 + nomor tanpa 0 di depan -->
+            <a class="btn btn-primary" href="https://wa.me/6281234567890?text=Halo%20Coffee%20Shop%2C%20saya%20mau%20pesan..." target="_blank" rel="noopener">Chat WhatsApp</a>
+          </div>
+
+          <div class="contact-block">
+            <h3>Alamat</h3>
+            <!-- GANTI dengan alamat asli -->
+            <p>Jl. Contoh Raya No. 12<br>Kota Anda, 12345</p>
+            <p>Instagram: <a href="https://instagram.com/coffeeshop" target="_blank" rel="noopener">@coffeeshop</a></p>
+          </div>
+
+          <div class="contact-block">
+            <h3>Jam buka</h3>
+            <!-- GANTI dengan jam buka asli -->
+            <table class="hours">
+              <tr><th scope="row">Senin – Jumat</th><td>10.00 – 22.00</td></tr>
+              <tr><th scope="row">Sabtu – Minggu</th><td>09.00 – 23.00</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Coffee Shop. Dibuat dengan HTML dan CSS.</p>
+    </div>
+  </footer>
+
+  <!-- Tombol keranjang melayang -->
+  <button type="button" id="cart-open" class="cart-fab">
+    Keranjang <span class="count" id="cart-count">0</span>
+  </button>
+
+  <!-- Keranjang + checkout -->
+  <dialog id="cart-dialog" class="cart">
+    <div class="cart-inner">
+      <div class="cart-head">
+        <h2>Keranjang</h2>
+        <button type="button" id="cart-close" class="cart-close" aria-label="Tutup keranjang">&times;</button>
+      </div>
+
+      <p id="cart-empty" class="cart-empty">Keranjang masih kosong. Pilih menu dulu, lalu klik "Tambah".</p>
+      <ul id="cart-items" class="cart-items"></ul>
+
+      <div id="cart-total-row" class="cart-total" hidden>
+        <span>Total</span>
+        <strong id="cart-total">Rp0</strong>
+      </div>
+
+      <form id="checkout-form" class="checkout-form" hidden>
+        <label>Nama
+          <input type="text" id="co-nama" required autocomplete="name">
+        </label>
+        <label>Pesanan
+          <select id="co-tipe">
+            <option>Ambil di tempat</option>
+            <option>Antar</option>
+          </select>
+        </label>
+        <label id="co-alamat-wrap" hidden>Alamat antar
+          <textarea id="co-alamat" rows="2"></textarea>
+        </label>
+        <label>Catatan (opsional)
+          <input type="text" id="co-catatan" placeholder="Contoh: es batu dikurangi">
+        </label>
+        <button type="submit" class="btn btn-primary">Pesan lewat WhatsApp</button>
+      </form>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
